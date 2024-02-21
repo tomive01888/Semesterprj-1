@@ -1,0 +1,22 @@
+* {
+    scroll-behavior: smooth;
+    text-decoration: none;
+
+}
+
+body {
+    background-color: white;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+header {
+    background-color: red;
+    width: 100px;
+    height: 200px;
+}
+
+main {}
