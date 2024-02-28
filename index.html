@@ -3,27 +3,160 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Document</title>
+    <title>Oslo Science Museum</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/e53c358020.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <header></header>
-    <nav></nav>
+    <header id="top">
+      <nav>
+        <div class="menu-bar">
+          <a class="text-logo" href="/"> OSM</a>
+          <input type="checkbox" name="menu" id="menu" />
+          <label class="menu" for="menu">
+            <span class="line-one"></span>
+            <span class="line-two"></span>
+          </label>
+          <div class="menu-content">
+            <a href="/">Home</a>
+            <a href="./html/exhibitions.html">Exibitions</a>
+            <a href="./html/contribute.html">Contribute</a>
+            <a href="./html/contact.html">Visit</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="hero">
+        <div class="hero-text">
+          <span>OSLO</span>
+          <div class="hero-imgs hero-img1"></div>
+        </div>
+        <div class="hero-text">
+          <div class="hero-imgs hero-img2"></div>
+          <span>SCIENCE</span>
+        </div>
+        <div class="hero-text">
+          <span>MUSEUM</span>
+          <div class="hero-imgs hero-img3"></div>
+        </div>
+        <article>
+          <h1>Welcome to Oslo Science Museum</h1>
+          <p>
+            Come join us at the Community Science Museum where we're committed
+            to making science accessible to all.
+          </p>
+          <p>
+            Over the course of human history, science has developed from our
+            early understanding of fire, wind, water, and earth to exploring
+            everything from galaxies far away to the very building blocks of
+            life itself.
+          </p>
+          <p>
+            The aim of our museum is to create a space where everyone can
+            experience the wonders of our discoveries and perhaps even ignite a
+            lifelong passion to continue the exploration of the world around us.
+          </p>
+          <p>
+            We believe science should not be confined to the textbook, but
+            brought to live through exhibits. This is why we have over 1000
+            different exhibits on the many varied subjects of science to
+            explore. Many of these exhibits are designed for you to interact
+            with and play around to see science come to life, (apart from the
+            dinosaur exhibits - they only come to life at night when everyone's
+            gone home).
+          </p>
+        </article>
+      </section>
 
-    <main>
-      <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
+      <section class="discover">
+        <h2>Discover awesome stuff</h2>
+        <div class="grid">
+          <div class="relative">
+            <img
+              src="./assets/celso-405219.png"
+              alt="a doll equipped with spacesuit sitting inside space shuttle"
+            />
+            <p class="absolute-text">Cosmology</p>
+          </div>
+          <div class="relative">
+            <img
+              src="./assets/william-bout-264826.png"
+              alt="female scientist experimenting in a cylindrical giant metalbox"
+            />
+            <p class="absolute-text">Robots and AI</p>
+          </div>
+          <div class="relative">
+            <img
+              src="./assets/mammoth-1257288_1920-min.png"
+              alt="a massive fossil of a prehistoric mammoth"
+            />
+            <p class="absolute-text">Fossil displays</p>
+          </div>
+          <div class="relative">
+            <img
+              src="./assets/skeleton-414543_1920.png"
+              alt="a display of human skeleton and ape skeletons"
+            />
+            <p class="absolute-text">Evolution</p>
+          </div>
+          <div class="relative">
+            <img
+              src="./assets/genoa-956405_1920-min.png"
+              alt="exhibitions of ants, statues of ants upscaled"
+            />
+            <p class="absolute-text">Cosmology</p>
+          </div>
+          <div class="relative">
+            <img
+              src="./assets/jesse-orrico-60373.png"
+              alt="a human skull in plastic showing brains and arteries and bloodvessels"
+            />
+            <p class="absolute-text">Biology</p>
+          </div>
+        </div>
+      </section>
     </main>
+    <div class="fixed-bg"></div>
 
-    <footer></footer>
+    <footer>
+      <a href="#top">Go back up <i class="fa-solid fa-up-long"></i></a>
+
+      <div>
+        <a href="./html/contact.html">Contact</a>
+
+        <a href="./html/policy.html">Privacy and ToS</a>
+      </div>
+
+      <div>
+        <img src="./assets/icons/facebook-48.png" alt="icon of facebook" />
+        <img src="./assets/icons/instagram-48.png" alt="icon of instagram" />
+        <img src="./assets/icons/twitterx-48.png" alt="icon of twitter x" />
+      </div>
+
+      <div class="footer-locate">
+        <p><strong>Locate us:</strong></p>
+        <p>Museumsgata 32</p>
+        <p>0281 Oslo</p>
+        <p>Norway</p>
+      </div>
+
+      <div class="footer-contact">
+        <p><i class="fa-regular fa-envelope"></i> osloscience@museum.com</p>
+        <p><i class="fa-solid fa-phone"></i> +47 123 45 678</p>
+      </div>
+    </footer>
   </body>
 </html>
+
+<article></article>

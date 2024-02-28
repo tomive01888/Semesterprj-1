@@ -1,0 +1,28 @@
+/* exhibitions page */
+
+.exhibitions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.exhibitions div {
+    width: 100%;
+    height: 25vh;
+    background: red;
+    border-radius: var(--img-radius);
+}
+
+.exhibitions-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.exhibit-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}

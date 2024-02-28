@@ -1,0 +1,205 @@
+/* VISIT*/
+
+.visit {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.hours {
+    gap: 2rem;
+    width: 350px;
+
+}
+
+.hours .weekdays {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: rgba(207, 24, 210, 0.8);
+    border-radius: var(--img-radius);
+    height: 450px;
+    width: 350px;
+
+}
+
+.hours ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    text-align: left;
+}
+
+.hours .right-align {
+    text-align: right;
+}
+
+.reach-us div {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: rgba(240, 252, 105, 0.8);
+    border-radius: var(--img-radius);
+    height: 450px;
+    width: 350px;
+}
+
+.visit article,
+.visit article h2 {
+    width: fit-content;
+}
+
+.visit img {
+    width: 100%;
+    max-width: 480px;
+    border-radius: var(--img-radius);
+}
+
+.additional {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.flask-2 {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.additional div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 75ch;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 1rem;
+    border-radius: var(--img-radius);
+
+}
+
+.additional img {
+    width: 100%;
+    max-width: 320px;
+    height: fit-content;
+}
+
+.flask-1 img:hover,
+.flask-3 img:hover {
+    transition: all 1.3s;
+    transform: rotate(23deg);
+}
+
+.flask-2 img:hover {
+    transition: all 1.3s;
+    transform: rotate(-23deg);
+
+}
+
+
+/* ____________CONTACT FORM______________ */
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    max-width: 60%;
+    text-wrap: pretty;
+}
+
+.contact-us p {
+    width: 100%;
+    max-width: 40ch;
+}
+
+form {
+    margin: 1rem 0;
+    width: 80%;
+}
+
+form fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+fieldset label {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+select,
+input {
+    width: 80%;
+    background: rgba(229, 240, 69, 0.6);
+    border: 1px solid #000;
+    border-radius: var(--img-radius);
+    padding: 0.5rem;
+}
+
+textarea {
+    width: 100%;
+    height: 220px;
+    background: rgba(229, 240, 69, 0.6);
+    border: 1px solid #000;
+    min-height: 220px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: var(--img-radius);
+    padding: 0.5rem;
+
+}
+
+.send-it[type=submit] {
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin-top: 0.5rem;
+    border-radius: var(--img-radius);
+    font-weight: 900;
+    background: rgb(239, 176, 31);
+    width: 100px;
+}
+
+@media only screen and (max-width: 880px) {
+
+    .additional img {
+        max-width: 200px;
+    }
+
+    .additional {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .flask-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-us {
+        max-width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    textarea {
+        resize: vertical;
+        max-width: 100%;
+    }
+}

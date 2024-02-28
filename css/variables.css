@@ -1,8 +1,11 @@
 :root {
+    --page-max-width: 92rem;
 
-    --primary-color: rgb(42, 42, 42);
-    --secondary-color: rgb(232, 232, 232);
+    --light-black: rgb(34, 33, 33);
+    --dull-white: rgb(232, 232, 232);
 
-    --font-karantina: "Karantina", system-ui;
+    --primary-black: rgb(35, 34, 34);
+
+    --img-radius: 6px;
 
 }

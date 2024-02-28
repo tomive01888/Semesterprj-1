@@ -1,0 +1,132 @@
+@import url(./reset.css);
+@import url(./variables.css);
+
+/* hero index section */
+.hero {
+    margin-top: 1rem;
+    height: auto;
+    width: 100%;
+}
+
+.hero article {
+    margin-top: 4rem;
+    background: rgba(255, 245, 110, 0.8);
+    padding: 1rem;
+    border-radius: var(--img-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero article * {
+    text-wrap: pretty;
+    max-width: 75ch;
+}
+
+.hero h1 {
+    text-transform: capitalize;
+    max-width: 65%;
+}
+
+
+.hero-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.hero-text span {
+    width: 40%;
+    font-family: 'Anton', sans-serif;
+    font-size: 7.5rem;
+    font-size: clamp(2.5rem, 4vw + 0.8rem, 7.5rem);
+}
+
+.hero-imgs {
+    width: 70%;
+    height: 5rem;
+    background: red;
+    display: block;
+}
+
+
+.hero-img1 {
+    height: 150px;
+    background: blue;
+    border-radius: var(--img-radius);
+    background-image: url(../assets/space-bg-hero1-min.jpeg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.hero-img2 {
+    height: 200px;
+    background: blue;
+    border-radius: var(--img-radius);
+    background-image: url(../assets/leaf-hero-img3-min.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-img3 {
+    height: 180px;
+    background: purple;
+    border-radius: var(--img-radius);
+    background-image: url(../assets/electrode-hero-img2-min.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.hero article {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+/* discover hero section */
+
+.discover {
+    background: none;
+    margin: 2rem 0;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+}
+
+.grid div {
+    width: 100%;
+    height: max-content;
+}
+
+.grid div img {
+    width: 100%;
+    height: auto;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute-text {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: black;
+    color: var(--dull-white);
+    padding: 1rem;
+}
+
+@media (max-width: 780px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visit | Oslo Science Museum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/e53c358020.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/visit.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="menu-bar">
+          <a class="text-logo" href="/">OSM</a>
+          <label class="menu" for="menu">
+            <span class="line-one"></span>
+            <span class="line-two"></span>
+          </label>
+          <input type="checkbox" name="menu" id="menu" />
+          <div class="menu-content">
+            <a href="#">Home</a>
+            <a href="#">Exibition</a>
+            <a href="#">Contribute</a>
+            <a href="#">Visit</a>
+            <a href="#">Policy</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <h1>VISIT</h1>
+      <div class="visit">
+        <article class="hours">
+          <h2>Opening hours:</h2>
+          <div class="weekdays">
+            <ul>
+              <li><strong>Monday</strong></li>
+              <li><strong>Tuesday</strong></li>
+              <li><strong>Wednesday</strong></li>
+              <li><strong>Thursday</strong></li>
+              <li><strong>Friday</strong></li>
+              <li><strong>Saturday</strong></li>
+              <li><strong>Sunday</strong></li>
+            </ul>
+            <ul class="right-align">
+              <li>Closed</li>
+              <li>10:00 - 16:00</li>
+              <li>10:00 - 16:00</li>
+              <li>10:00 - 16:00</li>
+              <li>10:00 - 19:00</li>
+              <li>09:00 - 16:00</li>
+              <li>09:00 - 13:00</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="reach-us">
+          <h2>Reach us</h2>
+          <div>
+            <h3><strong>Location:</strong></h3>
+            <p>Museumsgata 32</p>
+            <p>0281 Oslo</p>
+            <p>Norway</p>
+            <br />
+
+            <p><i class="fa-regular fa-envelope"></i> osloscience@museum.com</p>
+            <br />
+
+            <p><i class="fa-solid fa-phone"></i> +47 123 45 678</p>
+          </div>
+        </article>
+
+        <img
+          src="../assets/scott-webb-102825-min.jpg"
+          alt="the entrance of OSM, a colorful entrance"
+        />
+      </div>
+
+      <section class="additional flask-1">
+        <div>
+          <h3>Admission</h3>
+          <p>The entrance is free for all.</p>
+          <p>
+            There are guided tours of the museum that leave every hour. These
+            tours are 70 NOK per person and include a handy printed guide of the
+            museum.
+          </p>
+          <p>
+            If you would like to organise a guided tour for your group of 6 or
+            more people, please contact us to arrange the tour.
+          </p>
+        </div>
+        <img src="../assets/science_flask_1.png" alt="" />
+      </section>
+
+      <section class="additional flask-2">
+        <img src="../assets/science_flask_2.png" alt="" />
+        <div>
+          <h3>Accessibility</h3>
+          <p>
+            The museum has wheelchair accessibility ramps. It also has audio
+            guides and braille display signs for the visually impaired.
+          </p>
+          <h3>Food and Drinks</h3>
+          <p>
+            There is a café attached to the museum where you can get light
+            lunches, soft drinks, coffee, snacks and more.
+          </p>
+        </div>
+      </section>
+
+      <section class="additional flask-3">
+        <div>
+          <h3>Store</h3>
+          <p>
+            Our shop offers a range of memorabilia from the museum as well as
+            great gifts and activity packs that allow you to continue to explore
+            science even after you've left the museum.
+          </p>
+          <p>Store offers back to school equipment for every age.</p>
+          <p>Kits, tools, toys, books, DIY projects and more to explore!</p>
+        </div>
+        <img src="../assets/science-flask_3.png" alt="" />
+      </section>
+
+      <section class="contact-us" id="contact">
+        <h2>Send us a message</h2>
+        <p>
+          Have concerns or any feedback you would like us to know, please fill
+          out the form below.
+        </p>
+        <p>
+          You can also ask usk any general questions, about booking, donate or
+          apply to join our team.
+        </p>
+        <form>
+          <fieldset>
+            <legend>Contact form</legend>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="fullname">Name</label>
+            <input type="fullname" id="fullname" name="text" required />
+
+            <label for="select">Topic</label>
+            <select name="select" id="select" required>
+              <option value="-none-">-none-</option>
+              <option value="">General question</option>
+              <option value="">Booking</option>
+              <option value="">Volunteering</option>
+              <option value="">Internship</option>
+              <option value="">Donate</option>
+            </select>
+
+            <label for="msg">Message</label>
+            <textarea id="msg" name="msg" required></textarea>
+
+            <input
+              class="send-it"
+              type="submit"
+              onclick="alert('Thanks for reaching out to us')"
+            />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <div class="fixed-bg"></div>
+    <footer>
+      <a href="#top">Go back up <i class="fa-solid fa-up-long"></i></a>
+
+      <div>
+        <a href="./html/contact.html">Contact</a>
+
+        <a href="./html/policy.html">Privacy and ToS</a>
+      </div>
+
+      <div>
+        <img src="../assets/icons/facebook-48.png" alt="icon of facebook" />
+        <img src="../assets/icons/instagram-48.png" alt="icon of instagram" />
+        <img src="../assets/icons/twitterx-48.png" alt="icon of twitter x" />
+      </div>
+
+      <div class="footer-locate">
+        <p><strong>Locate us:</strong></p>
+        <p>Museumsgata 32</p>
+        <p>0281 Oslo</p>
+        <p>Norway</p>
+      </div>
+
+      <div class="footer-contact">
+        <p><i class="fa-regular fa-envelope"></i> osloscience@museum.com</p>
+        <p><i class="fa-solid fa-phone"></i> +47 123 45 678</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+/* CONTRIBUTE*/
+
+.support {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 4rem;
+    background: rgba(5, 209, 255, 0.5);
+    padding: 1rem;
+    border-radius: var(--img-radius);
+}
+
+.support div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 50ch;
+}
+
+.support img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: var(--img-radius);
+
+}
+
+.volunteer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 5rem;
+    background: rgba(0, 255, 51, 0.5);
+    padding: 1rem;
+    border-radius: var(--img-radius);
+}
+
+.volunteer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50ch;
+    gap: 1rem;
+}
+
+.volunteer img {
+    width: 100%;
+    max-width: 380px;
+    border-radius: var(--img-radius);
+
+}
+
+.internship {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 5rem;
+    background: rgba(255, 221, 0, 0.5);
+    padding: 1rem;
+    border-radius: var(--img-radius);
+}
+
+.internship div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50ch;
+    gap: 1rem;
+}
+
+.internship img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: var(--img-radius);
+}
+
+.help-out {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(63, 191, 255, 0.7);
+    border-radius: var(--img-radius);
+    height: 200px;
+
+}
+
+.help-out p {
+    max-width: 55ch;
+    text-align: left;
+
+}

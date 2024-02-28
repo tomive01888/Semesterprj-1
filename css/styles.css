@@ -1,8 +1,11 @@
 @import url(./reset.css);
 @import url(./variables.css);
 
+* {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -10,6 +13,23 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Inter", sans-serif;
+
+
+}
+
+.fixed-bg {
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right,
+            rgba(231, 231, 231, 0.9),
+            rgba(214, 214, 214, 0.9)),
+        url(../assets/3659665-min.jpg);
+    background-size: cover;
+
+
 }
 
 main {
@@ -18,70 +38,305 @@ main {
     display: flex;
     flex-direction: column;
     gap: 10px;
+
 }
 
-main section {
-    background-color: var(--primary-color);
-    width: 99%;
-    height: 450px;
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
     margin: 0 auto;
+    width: 85%;
+    max-width: 92rem;
+    padding: 4rem 1rem;
 }
+
+.container section,
+.container article,
+.container h1 {
+    width: 100%;
+}
+
+nav {
+    /* height: 1.7rem; */
+    width: 100%;
+    /* margin-top: 1rem; */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 4rem;
+    background: rgb(34, 33, 33);
+}
+
+.icon {
+    width: 100%;
+    max-width: 35px;
+}
+
+.text-logo {
+    font-family: 'Anton', sans-serif;
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--dull-white);
+}
+
+/* top menu bar */
+.menu-bar {
+    width: 100%;
+    margin: 0 auto;
+    max-width: var(--page-max-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* burger menu icon */
+
+
+
+.menu {
+    background: transparent;
+    display: block;
+    height: 25px;
+    width: 35px;
+    position: relative;
+    transition: background-color 0.15s ease;
+    border: none;
+    /* overflow: hidden; */
+}
+
+#menu {
+    display: none;
+}
+
+#menu:checked~.menu-content {
+    display: flex;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.menu .line-one,
+.menu .line-two {
+    display: inline-block;
+    background: var(--dull-white);
+    height: 4px;
+    width: 100%;
+    position: absolute;
+}
+
+.menu .line-one {
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    transition: transform 0.25s ease-in-out;
+}
+
+.menu .line-two {
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    transition: transform 0.25s ease-in-out;
+}
+
+/* when its open and checkbox is checked */
+
+.menu-bar:has(input[type=checkbox]:checked) {
+    .menu .line-one {
+        background: red;
+        transform: rotate(45deg) translateY(14.5px);
+        transform-origin: top-right;
+    }
+
+    .menu .line-two {
+        background: red;
+        transform: rotate(-45deg) translateY(-14.5px);
+        transform-origin: bottom-right;
+    }
+}
+
+/* main nav content */
+
+.menu {
+    display: none;
+}
+
+.menu-content {
+    display: flex;
+    gap: 3rem;
+    background: none;
+    color: var(--dull-white);
+    right: -200px;
+    left: -400px;
+}
+
+.menu-content a:first-child {
+    display: none;
+}
+
+.menu-content a {
+    color: var(--dull-white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 750px) {
+    .menu {
+        display: block;
+    }
+
+    .menu-content {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 63px;
+        height: calc(100vh - 2.7rem + 15px);
+        background: rgb(182, 193, 175);
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1.5rem;
+        display: none;
+        transition: all 2ms;
+    }
+
+    .menu-content a:first-child {
+        display: block;
+        padding-top: 3rem;
+
+    }
+
+    .menu-content a {
+        font-size: 32px;
+    }
+
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: var(--light-black);
+    height: fit-content;
+    width: 100%;
+    max-width: 92rem;
+    margin: 0 auto;
+    row-gap: 3rem;
+    padding: 2rem;
+}
+
+footer div {
+    display: flex;
+    gap: 3rem;
+}
+
+footer div a {
+    border-bottom: 1px solid red;
+
+}
+
+footer div img {
+    width: 100%;
+    max-width: 34px;
+}
+
+footer * {
+    margin: 0 auto;
+    text-decoration: none;
+    color: var(--dull-white);
+}
+
+footer *:nth-child(2) {
+    grid-column: 2 /span 2;
+    margin: 0 auto;
+    height: fit-content;
+}
+
+footer *:nth-child(3) {
+    display: flex;
+    gap: 1rem;
+    grid-column: 4;
+}
+
+.footer-locate,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-locate {
+    grid-column: 1 /span 2;
+}
+
+.footer-contact {
+    grid-column: 3 /span 2;
+}
+
+
+@media (max-width: 780px) {
+
+    footer {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    footer *:nth-child(2) {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    footer *:nth-child(3) {
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    footer *:nth-child(4) {
+        grid-row: 4;
+        grid-column: 1;
+    }
+
+    footer *:nth-child(5) {
+        grid-row: 5;
+        grid-column: 1;
+    }
+}
+
 
 
 /* _________________CSS styling shared style_________________ */
 
 h1 {
-    font-family: var(--font-karantina);
-    font-size: clamp(0.85rem, 2vw + 0.2rem, 1rem);
+    font-size: clamp(2rem, 2vw + 1rem, 2.75rem);
 }
 
 h2 {
-    font-family: var(--font-karantina);
-    font-size: clamp(0.85rem, 2vw + 0.2rem, 1rem);
+    font-size: clamp(1.55rem, 2vw + 0.2rem, 2rem);
 }
 
 h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-karantina);
-    font-size: clamp(0.85rem, 2vw + 0.2rem, 1rem);
+    font-size: clamp(1.25rem, 2vw + 0.2rem, 1.55rem);
 }
 
 p,
 li,
+i,
 a,
 figcaption {
-    font-family: var(--font-karantina);
+    font-family: "Inter", sans-serif;
+    font-size: clamp(1rem, 2vw + 0.2rem, 1.25rem);
+}
+
+textarea,
+input,
+option,
+select {
+    font-family: "Inter", sans-serif;
     font-size: clamp(0.85rem, 2vw + 0.2rem, 1rem);
-}
-
-/* _________________HEADER styling_________________ */
-
-
-
-
-header {
-    background-color: var(--primary-color);
-    width: 99%;
-    height: 450px;
-    margin: 0 auto;
-    margin-top: 10px;
-}
-
-nav {
-    background-color: purple;
-    width: 99%;
-    height: 150px;
-    margin: 0 auto;
-}
-
-
-
-footer {
-    background-color: var(--primary-color);
-    width: 99%;
-    height: 450px;
-    margin: 0 auto;
-    margin-bottom: 10px;
 }

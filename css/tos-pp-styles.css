@@ -1,0 +1,44 @@
+h2 {
+    margin-top: 2rem;
+}
+
+li {
+    margin-left: 2rem;
+}
+
+.tos-page {
+    display: none;
+}
+
+.pp-page {
+    display: none;
+}
+
+#tos[type=radio]:checked~.tos-page {
+    display: block;
+}
+
+#pp[type=radio]:checked~.pp-page {
+    display: block;
+}
+
+.outline-style {
+    outline: 1px solid black;
+    padding: 2rem;
+}
+
+p,
+li {
+    max-width: 72ch;
+    text-wrap: pretty;
+}
+
+input {
+    margin-bottom: 1rem;
+    color: red;
+
+}
+
+label {
+    font-size: 24px;
+}
