@@ -22,7 +22,7 @@
       src="https://kit.fontawesome.com/e53c358020.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/global-styles.css" />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
@@ -45,7 +45,7 @@
       </nav>
     </header>
     <main class="container">
-      <section class="hero">
+      <div class="hero">
         <div class="hero-text">
           <span>OSLO</span>
           <div class="hero-imgs hero-img1"></div>
@@ -58,33 +58,31 @@
           <span>MUSEUM</span>
           <div class="hero-imgs hero-img3"></div>
         </div>
-        <article>
-          <h1>Welcome to Oslo Science Museum</h1>
-          <p>
-            Come join us at the Community Science Museum where we're committed
-            to making science accessible to all.
-          </p>
-          <p>
-            Over the course of human history, science has developed from our
-            early understanding of fire, wind, water, and earth to exploring
-            everything from galaxies far away to the very building blocks of
-            life itself.
-          </p>
-          <p>
-            The aim of our museum is to create a space where everyone can
-            experience the wonders of our discoveries and perhaps even ignite a
-            lifelong passion to continue the exploration of the world around us.
-          </p>
-          <p>
-            We believe science should not be confined to the textbook, but
-            brought to live through exhibits. This is why we have over 1000
-            different exhibits on the many varied subjects of science to
-            explore. Many of these exhibits are designed for you to interact
-            with and play around to see science come to life, (apart from the
-            dinosaur exhibits - they only come to life at night when everyone's
-            gone home).
-          </p>
-        </article>
+      </div>
+      <section>
+        <h1>Welcome to Oslo Science Museum</h1>
+        <p>
+          Come join us at the Community Science Museum where we're committed to
+          making science accessible to all.
+        </p>
+        <p>
+          Over the course of human history, science has developed from our early
+          understanding of fire, wind, water, and earth to exploring everything
+          from galaxies far away to the very building blocks of life itself.
+        </p>
+        <p>
+          The aim of our museum is to create a space where everyone can
+          experience the wonders of our discoveries and perhaps even ignite a
+          lifelong passion to continue the exploration of the world around us.
+        </p>
+        <p>
+          We believe science should not be confined to the textbook, but brought
+          to live through exhibits. This is why we have over 1000 different
+          exhibits on the many varied subjects of science to explore. Many of
+          these exhibits are designed for you to interact with and play around
+          to see science come to life, (apart from the dinosaur exhibits - they
+          only come to life at night when everyone's gone home).
+        </p>
       </section>
 
       <section class="discover">
@@ -115,7 +113,7 @@
                 alt="a massive fossil of a prehistoric mammoth"
             /></a>
 
-            <p class="absolute-text">Fossil display</p>
+            <p class="absolute-text">Fossils at a grand display</p>
           </div>
           <div class="relative">
             <a href="./html/exhibitions.html#evolution"
@@ -129,7 +127,7 @@
           <div class="relative">
             <a href="./html/exhibitions.html#underground"
               ><img
-                src="./assets/genoa-956405_1920-min.png"
+                src="./assets/noah-buscher-x8ZStukS2PM-unsplash-min.png"
                 alt="exhibitions of ants, statues of ants upscaled"
             /></a>
 
@@ -147,8 +145,58 @@
         </div>
       </section>
 
-      <section>
+      <section class="special-events">
         <h2>Special and upcoming events</h2>
+
+        <article class="professor">
+          <div>
+            <h3>Visiting Professor of Aeronautics</h3>
+            <p>
+              It is our pleasure to announce that Prof Sheila Widnall from the
+              Massachusetts Institute of Technology will be delivering 3
+              lectures on the development of aeronautics and where the future
+              lies in this exciting 'space'.
+            </p>
+          </div>
+          <img
+            src="./assets/andrew-ruiz-348421-min.png"
+            alt="a human doll, sitting inside space shuttle wearing space suit"
+          />
+        </article>
+
+        <article class="sleepover">
+          <img
+            src="./assets/samuel-zeller-158996-min.jpg"
+            alt="young girl experiencing VR technology for her first time"
+          />
+          <div>
+            <h3>Night in the Museum</h3>
+            <p>
+              Get your family together for an exciting night in the museum as
+              you sleep over beside dinosaurs and science displays. Bring your
+              own sleeping bag and get ready to rough it as we go exploring the
+              wonders of science.
+            </p>
+          </div>
+        </article>
+
+        <article class="energetica">
+          <div>
+            <h3>Energetica Exhibition on Loan</h3>
+            <p>
+              On loan from the NEMO Science Museum in Amsterdam, the Energetica
+              exhibition is coming to the Community Science Museum. It's a
+              series of installations that allow visitors to experience the
+              power of the elements as we harness them. From solar energy
+              powering lighting, to 'Wind Island' that shows how turbines are
+              able to use and control wind to create power.
+            </p>
+          </div>
+          <img
+            src="./assets/scientific-2040795_1280-min.png"
+            alt="young female scientist experimenting with natural forces"
+          />
+        </article>
       </section>
     </main>
     <div class="fixed-bg"></div>
@@ -157,7 +205,7 @@
       <a href="#top">Go back up <i class="fa-solid fa-up-long"></i></a>
 
       <div>
-        <a href="./html/contact.html">Contact</a>
+        <a href="./html/visit.html#contact">Contact</a>
 
         <a href="./html/policy.html">Privacy and ToS</a>
       </div>
@@ -182,5 +230,3 @@
     </footer>
   </body>
 </html>
-
-<article></article>

@@ -1,3 +1,9 @@
+/* POLICY */
+
+section h1 {
+    margin-bottom: 2rem;
+}
+
 h2 {
     margin-top: 2rem;
 }
@@ -24,7 +30,6 @@ li {
 p,
 li {
     max-width: 72ch;
-    text-wrap: pretty;
 }
 
 input {
@@ -35,4 +40,11 @@ input {
 
 label {
     font-size: 24px;
+}
+
+@media only screen and (max-width: 550px) {
+    .outline-style {
+        padding: 0.75rem;
+    }
+
 }

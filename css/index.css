@@ -20,7 +20,6 @@
 }
 
 .hero article * {
-    text-wrap: pretty;
     max-width: 75ch;
 }
 
@@ -105,11 +104,13 @@
 .grid div {
     width: 100%;
     height: max-content;
+
 }
 
 .grid div img {
     width: 100%;
     height: auto;
+    border-radius: var(--img-radius);
 }
 
 
@@ -134,5 +135,89 @@
 @media (max-width: 780px) {
     .grid {
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* __________________SPECIAL EVENTS_______________________ */
+
+.special-events {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.professor,
+.energetica,
+.sleepover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--img-radius);
+    padding: 0.5rem 2rem;
+    gap: 2rem;
+}
+
+.professor {
+    background: rgba(47, 255, 75, 0.6);
+
+}
+
+.energetica {
+    background: rgba(251, 39, 255, 0.6);
+
+}
+
+.sleepover {
+    background: rgba(25, 243, 255, 0.6);
+
+}
+
+.professor img,
+.energetica img {
+    width: 100%;
+    max-width: 420px;
+}
+
+.sleepover img {
+    width: 100%;
+    max-width: 240px;
+
+}
+
+.professor div,
+.energetica div,
+.sleepover div {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.professor div p,
+.energetica div p,
+.sleepover div p {
+    width: 100%;
+    max-width: 42ch;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .professor,
+    .energetica {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .sleepover {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+
     }
 }
