@@ -37,7 +37,7 @@ main {
     height: fit-content;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    /* gap: 10px; */
 
 }
 
@@ -46,11 +46,11 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 1rem;
     margin: 0 auto;
     width: 85%;
     max-width: 92rem;
-    padding: 4rem 1rem;
+    padding: 4rem 0;
 }
 
 .container section,
@@ -327,10 +327,9 @@ h6 {
 p,
 li,
 i,
-a,
-figcaption {
+a {
     font-family: "Inter", sans-serif;
-    font-size: clamp(1rem, 2vw + 0.2rem, 1.25rem);
+    font-size: clamp(1rem, 2vw + 0.2rem, 1.15rem);
 }
 
 textarea,

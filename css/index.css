@@ -112,8 +112,14 @@
     height: auto;
 }
 
+
 .relative {
     position: relative;
+}
+
+.relative:hover {
+    transform: scale(0.97);
+    box-shadow: 8px 8px 0 rgba(228, 44, 188, 0.6);
 }
 
 .absolute-text {
