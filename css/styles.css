@@ -65,7 +65,10 @@ nav {
     flex-direction: column;
     padding: 1rem 4rem;
     background: rgb(34, 33, 33);
+    height: 63px;
 }
+
+
 
 .icon {
     width: 100%;
@@ -92,8 +95,6 @@ nav {
 
 /* burger menu icon */
 
-
-
 .menu {
     background: transparent;
     display: block;
@@ -102,7 +103,6 @@ nav {
     position: relative;
     transition: background-color 0.15s ease;
     border: none;
-    /* overflow: hidden; */
 }
 
 #menu {
@@ -140,7 +140,6 @@ nav {
     transition: transform 0.25s ease-in-out;
 }
 
-/* when its open and checkbox is checked */
 
 
 
@@ -167,6 +166,25 @@ nav {
     color: var(--dull-white);
     text-decoration: none;
     font-weight: bold;
+}
+
+/* when its open and checkbox is checked */
+.menu-bar:has(input[type=checkbox]:checked) {
+    .menu .line-one {
+        background: red;
+        transform: rotate(45deg) translateY(14.5px);
+        transform-origin: top-right;
+    }
+
+    .menu .line-two {
+        background: red;
+        transform: rotate(-45deg) translateY(-14.5px);
+        transform-origin: bottom-right;
+    }
+}
+
+.active {
+    color: var(--light-black);
 }
 
 
@@ -201,21 +219,13 @@ nav {
         font-size: 32px;
     }
 
-}
-
-.menu-bar:has(input[type=checkbox]:checked) {
-    .menu .line-one {
-        background: red;
-        transform: rotate(45deg) translateY(14.5px);
-        transform-origin: top-right;
+    .active {
+        color: var(--light-black);
     }
 
-    .menu .line-two {
-        background: red;
-        transform: rotate(-45deg) translateY(-14.5px);
-        transform-origin: bottom-right;
-    }
 }
+
+
 
 footer {
     display: grid;

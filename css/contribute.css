@@ -1,17 +1,33 @@
 /* CONTRIBUTE*/
 
-.support {
+.support,
+.volunteer,
+.internship {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    gap: 4rem;
-    background: rgba(5, 209, 255, 0.5);
+    gap: 3rem;
     padding: 1rem;
     border-radius: var(--img-radius);
 }
 
-.support div {
+.support {
+    background: rgba(5, 209, 255, 0.5);
+}
+
+.volunteer {
+    background: rgba(0, 255, 51, 0.5);
+}
+
+.internship {
+    background: rgba(255, 221, 0, 0.5);
+}
+
+.support div,
+.internship div,
+.volunteer div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,62 +35,19 @@
     max-width: 50ch;
 }
 
-.support img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: var(--img-radius);
-
-}
-
-.volunteer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    gap: 5rem;
-    background: rgba(0, 255, 51, 0.5);
-    padding: 1rem;
-    border-radius: var(--img-radius);
-}
-
-.volunteer div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50ch;
-    gap: 1rem;
-}
-
+.support img,
 .volunteer img {
     width: 100%;
-    max-width: 380px;
+    max-width: 240px;
     border-radius: var(--img-radius);
 
-}
-
-.internship {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    gap: 5rem;
-    background: rgba(255, 221, 0, 0.5);
-    padding: 1rem;
-    border-radius: var(--img-radius);
-}
-
-.internship div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50ch;
-    gap: 1rem;
 }
 
 .internship img {
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
     border-radius: var(--img-radius);
+    height: fit-content;
 }
 
 .help-out {
@@ -95,4 +68,28 @@
     max-width: 55ch;
     text-align: left;
 
+}
+
+@media only screen and (max-width: 880px) {
+
+    .support,
+    .internship {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .volunteer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .help-out {
+        height: fit-content;
+    }
 }

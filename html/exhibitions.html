@@ -29,9 +29,9 @@
           </label>
           <div class="menu-content">
             <a href="/">Home</a>
-            <a href="../html/exhibitions.html">Exibitions</a>
-            <a href="../html/contribute.html">Contribute</a>
-            <a href="../html/contact.html">Visit</a>
+            <a class="active" href="./exhibitions.html">Exibitions</a>
+            <a href="./contribute.html">Contribute</a>
+            <a href="./visit.html">Visit</a>
           </div>
         </div>
       </nav>
@@ -44,8 +44,8 @@
 
       <section class="exhibitions-info">
         <!-- legg til id på hver så anchor tag scroller ned til hver -->
-        <div class="exhibit-card">
-          <h4 class="cosmos">Cosmology</h4>
+        <div class="exhibit-card" id="cosmos">
+          <h4>Cosmology</h4>
           <div class="img-block">
             <img
               src="../assets/celso-405219.png"
@@ -73,8 +73,8 @@
           </div>
         </div>
 
-        <div class="exhibit-reverse-card">
-          <h4 class="cosmos">Robotics and AI</h4>
+        <div class="exhibit-reverse-card" id="robot">
+          <h4>Robotics and AI</h4>
           <div class="img-block">
             <img
               src="../assets/william-bout-264826.png"
@@ -102,8 +102,8 @@
           </div>
         </div>
 
-        <div class="exhibit-card">
-          <h4 class="cosmos">Fossils on display</h4>
+        <div class="exhibit-card" id="fossil">
+          <h4>Fossils on display</h4>
           <div class="img-block">
             <img
               src="../assets/mammoth-1257288_1920-min.png"
@@ -131,8 +131,8 @@
           </div>
         </div>
 
-        <div class="exhibit-reverse-card">
-          <h4 class="cosmos">Evolution</h4>
+        <div class="exhibit-reverse-card" id="evolution">
+          <h4>Evolution</h4>
           <div class="img-block">
             <img
               src="../assets/skeleton-414543_1920.png"
@@ -160,8 +160,8 @@
           </div>
         </div>
 
-        <div class="exhibit-card">
-          <h4 class="cosmos">Life underground</h4>
+        <div class="exhibit-card" id="underground">
+          <h4>Life underground</h4>
           <div class="img-block">
             <img
               src="../assets/genoa-956405_1920-min.png"
@@ -189,8 +189,8 @@
           </div>
         </div>
 
-        <div class="exhibit-reverse-card">
-          <h4 class="cosmos">Biology and medicine</h4>
+        <div class="exhibit-reverse-card" id="biology">
+          <h4>Biology and medicine</h4>
           <div class="img-block">
             <img
               src="../assets/jesse-orrico-60373.png"
@@ -219,7 +219,68 @@
         </div>
       </section>
 
-      <section></section>
+      <section class="tagging-all">
+        <h2>Information for you</h2>
+        <input type="radio" name="tag" id="kids" value="kids" checked />
+        <label class="kid active1" for="kids">For the kids</label>
+
+        <input type="radio" name="tag" id="teachers" value="teachers" />
+        <label class="teacher active2" for="teachers">For teachers</label>
+
+        <input type="radio" name="tag" id="researcher" value="researcher" />
+        <label class="researcher active3" for="researcher"
+          >For researchers</label
+        >
+
+        <div class="kids-menu">
+          <p>
+            Are you a young person looking to learn more about science? Come on
+            down to our museum, there's plenty to see and do.
+          </p>
+          <p>
+            You can learn about Newtonian physics from our bumper swing, or why
+            not travel back in time and meet our resident Woolly Mammoth? Our
+            exhibits are designed to be accessible for interested minds, so make
+            sure you come ready to learn and explore.
+          </p>
+          <p>
+            We also have the Young Stars club which meets once a week on a
+            Saturday between 10:00 and 13:00 where you'll get to explore and
+            experiment with our team of experts.
+          </p>
+          <p>
+            During the school holidays we run special holiday clubs where you
+            can join other children your age to go on a journey of discovery.
+            Each holiday we pick a new theme to explore. To find out more about
+            the holiday club and how you can join, send us a message.
+          </p>
+        </div>
+
+        <div class="teachers-menu">
+          <p>
+            As a community-driven museum, we want to work with schools to create
+            places of learning and exploring. Our team are on hand to give your
+            students guided tours of the museum, teach them in our learning
+            laboratory, and provide great video presentations that will excite
+            and inspire them.
+          </p>
+          <p>
+            Please get in touch with us here to find out more about our
+            facilities and to arrange a time to bring your students through for
+            a visit.
+          </p>
+        </div>
+
+        <div class="researchers-menu">
+          <p>
+            Are you looking to get involved with our team of researchers and
+            academics? Our museum offers various ways for you to use our
+            resources and contribute towards them. We have online records,
+            laboratory space, and a working relationship with a number of
+            universities around the country.
+          </p>
+        </div>
+      </section>
 
       <section class="img-gallery">
         <h3>The great exhibition halls</h3>

@@ -6,18 +6,12 @@ li {
     margin-left: 2rem;
 }
 
-.tos-page {
-    display: none;
-}
-
+.tos-page,
 .pp-page {
     display: none;
 }
 
-#tos[type=radio]:checked~.tos-page {
-    display: block;
-}
-
+#tos[type=radio]:checked~.tos-page,
 #pp[type=radio]:checked~.pp-page {
     display: block;
 }
