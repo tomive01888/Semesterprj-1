@@ -60,9 +60,7 @@ main {
 }
 
 nav {
-    /* height: 1.7rem; */
     width: 100%;
-    /* margin-top: 1rem; */
     display: flex;
     flex-direction: column;
     padding: 1rem 4rem;
@@ -144,19 +142,7 @@ nav {
 
 /* when its open and checkbox is checked */
 
-.menu-bar:has(input[type=checkbox]:checked) {
-    .menu .line-one {
-        background: red;
-        transform: rotate(45deg) translateY(14.5px);
-        transform-origin: top-right;
-    }
 
-    .menu .line-two {
-        background: red;
-        transform: rotate(-45deg) translateY(-14.5px);
-        transform-origin: bottom-right;
-    }
-}
 
 /* main nav content */
 
@@ -202,6 +188,7 @@ nav {
         gap: 1.5rem;
         display: none;
         transition: all 2ms;
+        z-index: 4;
     }
 
     .menu-content a:first-child {
@@ -214,6 +201,20 @@ nav {
         font-size: 32px;
     }
 
+}
+
+.menu-bar:has(input[type=checkbox]:checked) {
+    .menu .line-one {
+        background: red;
+        transform: rotate(45deg) translateY(14.5px);
+        transform-origin: top-right;
+    }
+
+    .menu .line-two {
+        background: red;
+        transform: rotate(-45deg) translateY(-14.5px);
+        transform-origin: bottom-right;
+    }
 }
 
 footer {
@@ -235,6 +236,12 @@ footer div {
 
 footer div a {
     border-bottom: 1px solid red;
+
+}
+
+footer div a:hover {
+    color: grey;
+    border-bottom: 1px solid blue;
 
 }
 
