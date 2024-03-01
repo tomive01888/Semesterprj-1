@@ -90,14 +90,28 @@
     height: fit-content;
 }
 
+/* animation of flasks */
+
+.flask-1 img,
+.flask-3 img {
+    transition: transform 1.3s;
+    transform: rotate(0deg);
+}
+
 .flask-1 img:hover,
 .flask-3 img:hover {
-    transition: all 1.3s;
+    transition: transform 1.3s;
     transform: rotate(23deg);
 }
 
+.flask-2 img {
+    transition: transform 1.3s;
+    transform: rotate(0deg);
+
+}
+
 .flask-2 img:hover {
-    transition: all 1.3s;
+    transition: transform 1.3s;
     transform: rotate(-23deg);
 
 }
@@ -139,22 +153,27 @@ fieldset label {
 select,
 input {
     width: 80%;
-    background: rgba(229, 240, 69, 0.6);
+    background: rgba(241, 241, 241, 0.9);
     border: 1px solid #000;
     border-radius: var(--img-radius);
     padding: 0.5rem;
+    border: 1px solid rgb(239, 176, 31);
+    box-shadow: 2px 2px 8px grey;
+
 }
 
 textarea {
     width: 100%;
     height: 220px;
-    background: rgba(229, 240, 69, 0.6);
-    border: 1px solid #000;
+    background: rgba(241, 241, 241, 0.9);
+    border: 1px solid rgb(239, 176, 31);
     min-height: 220px;
     max-height: 400px;
     resize: vertical;
     border-radius: var(--img-radius);
     padding: 0.5rem;
+    box-shadow: 2px 2px 8px grey;
+
 
 }
 
