@@ -68,9 +68,10 @@
     background: blue;
     border-radius: var(--img-radius);
     background-image: url(../assets/space-bg-hero1-min.jpeg);
-    background-position: center;
-    background-size: 110%;
+    background-position: 50% 33%;
+    background-size: 140%;
     transition: background-size 3s ease;
+    transform: rotate(-4deg);
 }
 
 .hero-img1:hover {
@@ -84,12 +85,14 @@
     border-radius: var(--img-radius);
     background-image: url(../assets/leaf-hero-img3-min.jpeg);
     background-position: center;
-    background-size: 110%;
+    background-size: 150%;
     transition: background-size 3s ease;
+    transform: rotate(2deg);
 }
 
 .hero-img2:hover {
-    background-size: 100%;
+    background-size: 120%;
+
 
 }
 
@@ -99,8 +102,9 @@
     border-radius: var(--img-radius);
     background-image: url(../assets/electrode-hero-img2-min.jpeg);
     background-position: center;
-    background-size: 110%;
+    background-size: 150%;
     transition: background-size 3s ease;
+    transform: rotate(-3deg);
 }
 
 .hero-img3:hover {
