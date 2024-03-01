@@ -349,7 +349,7 @@ input {
 #kids[type=radio]:checked~.active1,
 #teachers[type=radio]:checked~.active2,
 #researcher[type=radio]:checked~.active3 {
-    background: rgba(52, 255, 103, 0.6);
+    background: rgba(15, 255, 75, 0.6);
 }
 
 @media only screen and (max-width: 625px) {
@@ -390,7 +390,6 @@ input {
         grid-row: 9;
         padding: 1rem;
         border: 1px solid black;
-        background: rgba(15, 255, 75, 0.6);
     }
 }
 

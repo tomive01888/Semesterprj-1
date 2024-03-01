@@ -87,12 +87,27 @@
 }
 
 
-/* discover hero section */
+/* welcome section */
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+
+/* discover section */
 
 .discover {
     background: none;
     margin: 2rem 0;
 
+}
+
+.discover h2 {
+    margin-bottom: 1.5rem;
 }
 
 .grid {
@@ -144,7 +159,7 @@
 .special-events {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1.5rem;
 }
 
 .professor,
