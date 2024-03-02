@@ -28,7 +28,7 @@
     z-index: 2;
 }
 
-.exhibit-reverse-card h4 {
+.exhibit-reverse-card h3 {
     grid-column: 1 /span 3;
     grid-row: 1;
     height: fit-content;
@@ -42,7 +42,7 @@
     z-index: 1;
 }
 
-.exhibit-card h4 {
+.exhibit-card h3 {
     grid-column: 1 /span 2;
     grid-row: 1;
     height: fit-content;
@@ -65,10 +65,6 @@
 .read-tag5 {
     grid-column: 1;
     grid-row: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
     z-index: 1;
 }
 
@@ -77,11 +73,16 @@
 .read-tag6 {
     grid-column: 3;
     grid-row: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
     z-index: 1;
+}
+
+.read-tag1 p,
+.read-tag3 p,
+.read-tag5 p,
+.read-tag2 p,
+.read-tag4 p,
+.read-tag6 p {
+    max-width: 45ch;
 }
 
 .read-tag1,
@@ -133,17 +134,14 @@ input {
 
 .label1 {
     background: rgba(255, 18, 247, 0.6);
-
 }
 
 .read-tag1 {
     background: rgba(255, 18, 247, 0.6);
-
 }
 
 .label2 {
     background: rgba(19, 149, 255, 0.6);
-
 }
 
 .read-tag2 {
@@ -152,7 +150,6 @@ input {
 
 .label3 {
     background: rgba(255, 247, 27, 0.6);
-
 }
 
 .read-tag3 {
@@ -161,7 +158,6 @@ input {
 
 .label4 {
     background: rgba(25, 255, 75, 0.6);
-
 }
 
 .read-tag4 {
@@ -170,7 +166,6 @@ input {
 
 .label5 {
     background: rgba(255, 110, 6, 0.6);
-
 }
 
 .read-tag5 {
@@ -179,7 +174,6 @@ input {
 
 .label6 {
     background: rgba(255, 8, 8, 0.6);
-
 }
 
 .read-tag6 {
@@ -189,7 +183,10 @@ input {
 #open-tag1[type=checkbox]:checked~.read-tag1,
 #open-tag3[type=checkbox]:checked~.read-tag3,
 #open-tag5[type=checkbox]:checked~.read-tag5 {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     grid-column: 2;
     grid-row: 2;
     height: 99%;
@@ -205,7 +202,10 @@ input {
 #open-tag2[type=checkbox]:checked~.read-tag2,
 #open-tag4[type=checkbox]:checked~.read-tag4,
 #open-tag6[type=checkbox]:checked~.read-tag6 {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     grid-column: 2;
     grid-row: 2;
     height: 99%;
@@ -330,11 +330,27 @@ input {
 .kids-menu,
 .teachers-menu,
 .researchers-menu {
-    display: none;
     grid-column: 1 /span 3;
-    padding: 1rem;
+    padding: 2rem 3rem;
     border: 1px solid black;
     background: rgba(15, 255, 75, 0.6);
+    display: none;
+}
+
+.kids-menu p,
+.teachers-menu p,
+.researchers-menu p {
+    max-width: 72ch;
+}
+
+.teachers-menu {
+    align-items: center;
+    justify-content: center;
+}
+
+.researchers-menu {
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 #kids[type=radio]:checked~.kids-menu,
@@ -342,6 +358,7 @@ input {
 #researcher[type=radio]:checked~.researchers-menu {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
     height: fit-content;
 }
@@ -390,6 +407,7 @@ input {
         grid-row: 9;
         padding: 1rem;
         border: 1px solid black;
+        background: rgba(15, 255, 75, 0.6);
     }
 }
 
