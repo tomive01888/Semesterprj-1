@@ -71,8 +71,6 @@
 .additional img {
     width: 100%;
     max-width: 320px;
-    height: 100%;
-    max-height: fit-content;
 }
 
 .flask-2 {
