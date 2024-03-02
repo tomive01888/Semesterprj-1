@@ -67,6 +67,14 @@
     gap: 2rem;
 }
 
+.flask-1 img,
+.flask-2 img,
+.flask-3 img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+}
+
 .flask-2 {
     display: flex;
     justify-content: flex-end;
@@ -84,11 +92,7 @@
 
 }
 
-.additional img {
-    width: 100%;
-    max-width: 320px;
-    height: fit-content;
-}
+
 
 /* animation of flasks */
 

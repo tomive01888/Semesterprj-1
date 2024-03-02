@@ -256,6 +256,7 @@ footer div a:hover {
 footer div img {
     width: 100%;
     max-width: 34px;
+    height: auto;
 }
 
 footer * {
