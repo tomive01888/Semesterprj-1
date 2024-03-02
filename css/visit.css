@@ -65,12 +65,14 @@
     display: flex;
     justify-content: flex-start;
     gap: 2rem;
+    height: max-content;
 }
 
 .additional img {
     width: 100%;
     max-width: 320px;
-    height: fit-content;
+    height: 100%;
+    max-height: fit-content;
 }
 
 .flask-2 {
@@ -82,12 +84,17 @@
 .additional div {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     gap: 2rem;
-    max-width: 75ch;
+    width: 50%;
     background: rgba(255, 255, 255, 0.6);
     padding: 1rem;
     border-radius: var(--img-radius);
+}
 
+.additional div p {
+    max-width: 45ch;
 }
 
 
