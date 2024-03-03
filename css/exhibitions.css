@@ -19,7 +19,12 @@
     grid-template-columns: 150px 1fr 1fr;
     width: 100%;
     height: max-content;
+}
 
+.exhibit-card .img-block {
+    grid-column: 1;
+    grid-row: 2;
+    z-index: 2;
 }
 
 .exhibit-reverse-card .img-block {
@@ -31,33 +36,17 @@
 .exhibit-reverse-card h3 {
     grid-column: 1 /span 3;
     grid-row: 1;
-    height: fit-content;
-    float: right;
     justify-self: end;
 }
 
-.exhibit-reverse-card .read-tag2 {
-    grid-column: 3;
-    grid-row: 2;
-    z-index: 1;
-}
-
 .exhibit-card h3 {
-    grid-column: 1 /span 2;
+    grid-column: 1 /span 3;
     grid-row: 1;
-    height: fit-content;
-}
-
-.exhibit-card .img-block {
-    grid-column: 1;
-    grid-row: 2;
-    z-index: 2;
 }
 
 .img-block img {
     width: 100%;
-    max-width: 100%;
-
+    display: block;
 }
 
 .read-tag1,
@@ -76,12 +65,8 @@
     z-index: 1;
 }
 
-.read-tag1 p,
-.read-tag3 p,
-.read-tag5 p,
-.read-tag2 p,
-.read-tag4 p,
-.read-tag6 p {
+.exhibit-reverse-card div p,
+.exhibit-card div p {
     max-width: 45ch;
 }
 
@@ -99,29 +84,21 @@ input {
     display: none;
 }
 
-.open-tag1,
-.open-tag3,
-.open-tag5 {
-    grid-column: 2;
-    grid-row: 2;
-}
-
 .label1,
 .label3,
 .label5 {
-    display: inline-block;
     width: 150px;
     padding: 1rem;
     height: fit-content;
     grid-column: 2;
     grid-row: 2;
     border-radius: 0 8px 8px 0;
+    cursor: pointer;
 }
 
 .label2,
 .label4,
 .label6 {
-    display: block;
     width: 150px;
     padding: 1rem;
     height: fit-content;
@@ -129,53 +106,36 @@ input {
     grid-row: 2;
     border-radius: 8px 0 0 8px;
     justify-self: end;
+    cursor: pointer;
 
 }
 
-.label1 {
-    background: rgba(255, 18, 247, 0.6);
-}
-
+.label1,
 .read-tag1 {
     background: rgba(255, 18, 247, 0.6);
 }
 
-.label2 {
-    background: rgba(19, 149, 255, 0.6);
-}
-
+.label2,
 .read-tag2 {
     background: rgba(19, 149, 255, 0.6);
 }
 
-.label3 {
-    background: rgba(255, 247, 27, 0.6);
-}
-
+.label3,
 .read-tag3 {
     background: rgba(255, 247, 27, 0.6);
 }
 
-.label4 {
-    background: rgba(25, 255, 75, 0.6);
-}
-
+.label4,
 .read-tag4 {
     background: rgba(25, 255, 75, 0.6);
 }
 
-.label5 {
-    background: rgba(255, 110, 6, 0.6);
-}
-
+.label5,
 .read-tag5 {
     background: rgba(255, 110, 6, 0.6);
 }
 
-.label6 {
-    background: rgba(255, 8, 8, 0.6);
-}
-
+.label6,
 .read-tag6 {
     background: rgba(255, 8, 8, 0.6);
 }
@@ -187,6 +147,8 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
+    padding: 1rem;
     grid-column: 2;
     grid-row: 2;
     height: 99%;
@@ -206,6 +168,8 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
+    padding: 1rem;
     grid-column: 2;
     grid-row: 2;
     height: 99%;
@@ -224,8 +188,6 @@ input {
         grid-template-columns: 1fr 150px;
         grid-template-rows: 30px 1fr;
     }
-
-
 
     .exhibit-card .img-block {
         grid-column: 1 /span 3;
@@ -246,7 +208,7 @@ input {
     .label1,
     .label3,
     .label5 {
-        grid-column: 1;
+        grid-column: 1 /span 3;
         grid-row: 3;
         border-radius: var(--img-radius);
     }
@@ -263,8 +225,13 @@ input {
     #open-tag1[type=checkbox]:checked~.read-tag1,
     #open-tag3[type=checkbox]:checked~.read-tag3,
     #open-tag5[type=checkbox]:checked~.read-tag5 {
-        display: block;
-        grid-column: 1 /span 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        grid-column: 1 /span 3;
         grid-row: 4;
         height: fit-content;
         border-radius: var(--img-radius);
@@ -274,15 +241,21 @@ input {
     #open-tag1[type=checkbox]:checked~label,
     #open-tag3[type=checkbox]:checked~label,
     #open-tag5[type=checkbox]:checked~label {
-        grid-column: 2;
+        grid-column: 3;
         grid-row: 3;
+
     }
 
     #open-tag2[type=checkbox]:checked~.read-tag2,
     #open-tag4[type=checkbox]:checked~.read-tag4,
     #open-tag6[type=checkbox]:checked~.read-tag6 {
-        display: block;
-        grid-column: 1 /span 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        grid-column: 1 /span 3;
         grid-row: 4;
         height: fit-content;
         border-radius: var(--img-radius);
@@ -296,15 +269,11 @@ input {
     }
 }
 
-/* _____________SELECTION GALLERY______________ */
+/* _____________SELECTION SECTION______________ */
 
 .tagging-all {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-}
-
-.tagging-all::after {
-    background-color: black;
 }
 
 .tagging-all h2 {
@@ -324,8 +293,9 @@ input {
     border: 1px solid black;
     border-bottom: 0;
     border-left: 0;
-}
+    cursor: pointer;
 
+}
 
 .kids-menu,
 .teachers-menu,
@@ -444,8 +414,5 @@ input {
         grid-column: 1;
         margin: 0 auto;
 
-
     }
-
-
 }

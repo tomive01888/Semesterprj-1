@@ -127,7 +127,6 @@
 
 
     }
-
 }
 
 
@@ -138,9 +137,6 @@
     flex-direction: column;
     gap: 1rem;
 }
-
-
-
 
 /* discover section */
 
@@ -172,14 +168,18 @@
     border-radius: var(--img-radius);
 }
 
-
 .relative {
     position: relative;
+    transform: scale(1);
+    transition: transform 2s ease;
+
 }
 
 .relative:hover {
     transform: scale(0.97);
+    transition: transform 1.5s ease;
     box-shadow: 8px 8px 0 rgba(228, 44, 188, 0.6);
+
 }
 
 .absolute-text {

@@ -40,7 +40,6 @@
     width: 100%;
     max-width: 240px;
     border-radius: var(--img-radius);
-
 }
 
 .internship img {
@@ -67,7 +66,6 @@
 .help-out p {
     max-width: 55ch;
     text-align: left;
-
 }
 
 @media only screen and (max-width: 880px) {
@@ -78,7 +76,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
     }
 
     .volunteer {
@@ -86,7 +83,6 @@
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-
     }
 
     .help-out {
