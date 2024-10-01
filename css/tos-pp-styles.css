@@ -1,7 +1,18 @@
 /* POLICY */
 
-section h1 {
+#tos-pp-cont h1 {
     margin-bottom: 2rem;
+}
+
+#tos-pp-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#tos-pp-cont label {
+    margin-right: 1rem;
 }
 
 h2 {
@@ -20,11 +31,14 @@ li {
 #tos[type=radio]:checked~.tos-page,
 #pp[type=radio]:checked~.pp-page {
     display: block;
+    background-color: rgba(255, 255, 255, 0.8);
+
 }
 
 .outline-style {
     outline: 1px solid black;
     padding: 2rem;
+    margin-top: 1rem;
 }
 
 p,
@@ -32,9 +46,6 @@ li {
     max-width: 72ch;
 }
 
-input {
-    margin-bottom: 1rem;
-}
 
 label {
     font-size: 24px;
