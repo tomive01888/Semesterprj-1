@@ -7,8 +7,23 @@
 
 ### Description
 
-In this assignment we were to create a website for a client that is a *community science museum*. And our target audience range from 7-15 of age.
-The design of the website must be responsive and 
+Client:
+- Community Science Museum
+- Target range: 
+    - Children age 7-15
+    - Families
+    - School trips
+
+Brief:
+Design and build a modern, accessible and responsive web presence for the client using the provided image and text content.
+
+The site should appeal to youngsters without pandering; while aiming at a younger audience it should not patronise them with overtly childish themes. The core purpose of the site is to excite and entice people to visit the museum.
+
+The client has not supplied a logo because the museum committee cannot decide on a final design. You are free to create a placeholder logo for the client.
+
+My job:
+To ensure the client gets a good layout and responsive website. Follow the instructed guidelines for my task and deliver a final product my client approves.
+
 
 ### Built With
 
