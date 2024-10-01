@@ -351,7 +351,7 @@ li,
 i,
 a {
     font-family: "Inter", sans-serif;
-    font-size: clamp(1rem, 2vw + 0.2rem, 1.15rem);
+    font-size: clamp(0.85rem, 2vw + 0.2rem, 1rem);
     text-wrap: pretty;
 
 }

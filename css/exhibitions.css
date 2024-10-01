@@ -279,6 +279,7 @@ input {
 /* _____________SELECTION SECTION______________ */
 
 .tagging-all {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -312,7 +313,7 @@ input {
     border: 1px solid black;
     background: rgba(15, 255, 75, 0.6);
     display: none;
-    height: 440px;
+    height: fit-content;
 
 
 }
@@ -342,6 +343,7 @@ input {
 @media only screen and (max-width: 625px) {
 
     .tagging-all {
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(4, 1fr);
