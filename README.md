@@ -56,4 +56,4 @@ npm run start
 
 #### Contact
 
-[My Twitter page](www.twitter.com)
+[My LinkedIn]()
