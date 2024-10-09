@@ -4,6 +4,7 @@
 
 ![image](https://github.com/user-attachments/assets/b6341502-753a-43a9-bbe7-2dc438da18b4)
 
+Go visit us here: <a href="https://oslosm.netlify.app/" target="_blank" aria-label="Visit Oslo Science Museum">OSM website</a>
 
 ## Description
 Client:
